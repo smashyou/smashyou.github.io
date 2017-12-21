@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gamma Gallery - A Responsive Image Gallery Experiment</title>
+        <meta name="description" content="Gamma Gallery - A Responsive Image Gallery Experiment"/>
+        <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
+        <meta name="author" content="Codrops"/>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/modernizr.custom.70736.js"></script>
+		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+
+
+			<div class="main">
+				<header class="clearfix">
+
+					<h1>Gamma Gallery<span>A responsive image gallery experiment</span></h1>
+
+					<div class="support-note">
+						<span class="note-ie">Sorry, only modern browsers.</span>
+					</div>
+
+				</header>
+
+				<div class="gamma-container gamma-loading" id="gamma-container">
+
+					<ul class="gamma-gallery">
+
+						<li>
+							<div data-alt="img01" data-description="<h3>Dave To</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" alt="img01"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img02" data-description="<h3>Dave To</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" alt="img02"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img03" data-description="<h3>Penn's Landing</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" alt="img03"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img04" data-description="<h3>Skylar's Engagement</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" alt="img04"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img05" data-description="<h3>AC New Sunrise</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" alt="img05"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img06" data-description="<h3>Cloud</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" alt="img06"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img07" data-description="<h3>Skylar's Engagement</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" alt="img07"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img08" data-description="<h3>Yong & Skylar</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" alt="img08"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img09" data-description="<h3>Erika</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" alt="img09"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img10" data-description="<h3>Jim Thorpe</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg"></div>11
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" alt="img10"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img11" data-description="<h3>Kipp & Nari</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" alt="img11"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img12" data-description="<h3>Kipp & Nari</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" alt="img12"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img13" data-description="<h3>Sisters</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" alt="img13"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img14" data-description="<h3>Jim Thorpe</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" alt="img14"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img15" data-description="<h3>Kipp & Nari</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpgg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" alt="img15"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img16" data-description="<h3>Jim Thorpe</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" alt="img16"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img17" data-description="<h3>Sunyoung</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" alt="img17"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img18" data-description="<h3>Lambertville</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" alt="img18"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img19" data-description="<h3>Rachel</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" alt="img19"/>
+								</noscript>
+							</div>
+						</li>
+						<li>
+							<div data-alt="img20" data-description="<h3>Rachel</h3>" data-max-width="1800" data-max-height="1350">
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" data-min-width="1300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" data-min-width="1000"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" data-min-width="700"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" data-min-width="300"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" data-min-width="200"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" data-min-width="140"></div>
+								<div data-src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg"></div>
+								<noscript>
+									<img src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" alt="img20"/>
+								</noscript>
+							</div>
+						</li>
+            <li>
+              <div data-alt="img21" data-description="<h3>Yongshin</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" data-min-width="1300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" data-min-width="1000"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" data-min-width="700"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" data-min-width="300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" data-min-width="200"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" data-min-width="140"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg"></div>
+                <noscript>
+                  <img src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" alt="img21"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img22" data-description="<h3>Dave To</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" data-min-width="1300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" data-min-width="1000"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" data-min-width="700"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" data-min-width="300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" data-min-width="200"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" data-min-width="140"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg"></div>
+                <noscript>
+                  <img src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" alt="img22"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img23" data-description="<h3>Kipp & Nari</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" data-min-width="1300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" data-min-width="1000"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" data-min-width="700"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" data-min-width="300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" data-min-width="200"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" data-min-width="140"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg"></div>
+                <noscript>
+                  <img src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" alt="img23"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img24" data-description="<h3>2 Liberty Place</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" data-min-width="1300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" data-min-width="1000"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" data-min-width="700"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" data-min-width="300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" data-min-width="200"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" data-min-width="140"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg"></div>
+                <noscript>
+                  <img src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" alt="img24"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img25" data-description="<h3>Liz</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" data-min-width="1300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" data-min-width="1000"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" data-min-width="700"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" data-min-width="300"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" data-min-width="200"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" data-min-width="140"></div>
+                <div data-src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg"></div>https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg
+                <noscript>
+                  <img src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" alt="img25"/>
+                </noscript>
+              </div>
+            </li>
+					</ul>
+
+					<div class="gamma-overlay"></div>
+
+					<div id="loadmore" class="loadmore">Load more items...</div>
+
+				</div>
+
+			</div><!--/main-->
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="js/jquery.masonry.min.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/js-url.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/gamma.js"></script>
+		<script type="text/javascript">
+
+			$(function() {
+
+				var GammaSettings = {
+						// order is important!
+						viewport : [ {
+							width : 1200,
+							columns : 5
+						}, {
+							width : 900,
+							columns : 4
+						}, {
+							width : 500,
+							columns : 3
+						}, {
+							width : 320,
+							columns : 2
+						}, {
+							width : 0,
+							columns : 2
+						} ]
+				};
+
+				Gamma.init( GammaSettings, fncallback );
+
+
+				// Example how to add more items (just a dummy):
+        //
+				// var page = 0,
+				// 	items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
+
+				function fncallback() {
+
+					$( '#loadmore' ).show().on( 'click', function() {
+
+						++page;
+						var newitems = items[page-1]
+						if( page <= 1 ) {
+
+							Gamma.add( $( newitems ) );
+
+						}
+						if( page === 1 ) {
+
+							$( this ).remove();
+
+						}
+
+					} );
+
+				}
+
+			});
+
+		</script>
+	</body>
+</html>

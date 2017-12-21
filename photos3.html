@@ -1,0 +1,201 @@
+<html>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+<style type="text/css">
+            div.row > div > div.row {
+                margin-bottom: 15px;
+            }
+
+            html {
+                background-color: #02709e;
+            }
+            body {
+                background: #fefefe;
+                padding-bottom: 50px;
+            }
+
+            div.top-container {
+                padding-top:100px;
+                background-color: #02709e;
+                color:#ccc;
+            }
+            div.top-container h1 {
+                color:white;
+            }
+            div.top-container a {
+                color:#ccc;
+                border-bottom:1px dotted white;
+            }
+            div.top-container a:hover {
+                color: white;
+                cursor:pointer;
+                border-bottom:1px solid white;
+                text-decoration: none;
+            }
+            div.top-header {
+                margin-bottom:100px;
+            }
+
+            h2 {
+                background-color:#02709e;
+                color:white;
+                display:inline-block;
+                padding:6px;
+                margin-top:100px;
+            }
+
+            h3 {
+                padding-bottom:5px;
+                margin-bottom:10px;
+                border-bottom:1px solid #f2f2f2;
+                margin-top: 50px;
+            }
+
+            h4:not(.modal-title) {
+                margin-top:25px;
+            }
+
+            figure {
+                position: relative;
+            }
+
+            figure figcaption {
+                font-size: 22px;
+                color: #fff;
+                text-decoration: none;
+                bottom: 10px;
+                right: 20px;
+                position: absolute;
+                background-color: #000;
+            }
+			code[data-code], code.block-code {
+                display:block;
+                overflow:scroll;
+                font-size:12px;
+				white-space: pre;
+			}
+
+            table {
+                font-size:12px;
+            }
+            .footer {
+                text-align: center;
+            }
+            .footer span {
+                margin-top:100px;
+                font-size:12px;
+                background-color:#02709e;
+                color:white;
+                display:inline-block;
+                padding:6px;
+            }
+            .footer span a {
+                color:#ccc;
+                border-bottom:1px dotted white;
+            }
+            .footer span a:hover {
+                cursor:pointer;
+                color: white;
+                border-bottom:1px solid white;
+                text-decoration: none;
+            }
+            a.anchorjs-link {
+                color:black;
+            }
+            a.anchorjs-link:hover {
+                color:#02709e;
+                text-decoration: none;
+            }
+        </style>
+
+<body>
+
+<!-- Photo Grid -->
+        <!-- <div class="column">
+          <img src="https://user-images.githubusercontent.com/7408957/33629828-77bc170a-d9d3-11e7-8648-e174c0421df7.jpg" onclick="lightbox(7)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629829-77c57804-d9d3-11e7-906c-64cf64f8982c.jpg" onclick="lightbox(8)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629830-77cd475a-d9d3-11e7-9887-88f983d65642.jpg" onclick="lightbox(9)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629831-77fc57fc-d9d3-11e7-8c5d-67a7abb44bc4.jpg" onclick="lightbox(10)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629832-7806b918-d9d3-11e7-8cb1-f124d11e0a5d.jpg" onclick="lightbox(11)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629833-780f25a8-d9d3-11e7-9d57-7ada5ebed724.jpg" onclick="lightbox(12)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629849-7a04fa68-d9d3-11e7-9535-2243b0d32730.jpg" onclick="lightbox(25)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://user-images.githubusercontent.com/7408957/33629834-78191f0e-d9d3-11e7-8d97-23a7864b04b3.jpg" onclick="lightbox(13)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629835-78229ba6-d9d3-11e7-8bed-20ef85543196.jpg" onclick="lightbox(14)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629836-78326dce-d9d3-11e7-9d36-b73c80175c04.jpg" onclick="lightbox(15)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629837-783ee356-d9d3-11e7-8405-14b821a59c5d.jpg" onclick="lightbox(16)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629838-78a3d586-d9d3-11e7-9e62-ba659ba3cc81.jpg" onclick="lightbox(17)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629839-78ad31ee-d9d3-11e7-8592-dc9e58f57bce.jpg" onclick="lightbox(18)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629840-78b7aef8-d9d3-11e7-9a0f-bda00def0c9b.jpg" onclick="lightbox(19)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629848-79fa8ae2-d9d3-11e7-9ec9-35915996f664.jpg" onclick="lightbox(24)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://user-images.githubusercontent.com/7408957/33629841-78c92c6e-d9d3-11e7-9147-0920109508b1.jpg" onclick="lightbox(20)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629843-78d23da4-d9d3-11e7-88d2-f2188b00cfcd.jpg" onclick="lightbox(21)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629845-78e11996-d9d3-11e7-8e52-511de6b18ebe.jpg" onclick="lightbox(22)" style="width:100%">
+          <img src="https://user-images.githubusercontent.com/7408957/33629847-79ed753c-d9d3-11e7-9ff1-4b1fc3e9a050.jpg" onclick="lightbox(23)" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="row">
+            <a href="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="600" class="col-sm-4">
+                <img src="https://user-images.githubusercontent.com/7408957/33629807-6bb82232-d9d3-11e7-9e9a-9e0aff29a42e.jpg" class="img-fluid">
+            </a>
+            <a href="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="600" class="col-sm-4">
+                <img src="https://user-images.githubusercontent.com/7408957/33629825-77942376-d9d3-11e7-98bd-6ef164c00dae.jpg" class="img-fluid">
+            </a>
+            <a href="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="600" class="col-sm-4">
+                <img src="https://user-images.githubusercontent.com/7408957/33629823-774a0f2a-d9d3-11e7-86b2-2abe2b532c1e.jpg" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="row">
+        </div>
+
+        <div class="row">
+            <a href="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="600" class="col-sm-4">
+                <img src="https://user-images.githubusercontent.com/7408957/33629824-7789b724-d9d3-11e7-8339-a1004b939281.jpg" class="img-fluid">
+            </a>
+            <a href="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="600" class="col-sm-4">
+                <img src="https://user-images.githubusercontent.com/7408957/33629811-6f42e22a-d9d3-11e7-8b7d-ebe1b824cc5b.jpg" class="img-fluid">
+            </a>
+
+            <a href="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="600" class="col-sm-4">
+                <img src="https://user-images.githubusercontent.com/7408957/33629826-779f2762-d9d3-11e7-8aa1-323f42d2f995.jpg" class="img-fluid">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+<script>
+$(document).ready(function ($) {
+                            // delegate calls to data-toggle="lightbox"
+                            $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"]):not([data-gallery="example-gallery-11"])', function(event) {
+                                event.preventDefault();
+                                return $(this).ekkoLightbox({
+                                    onShown: function() {
+                                        if (window.console) {
+                                            return console.log('Checking our the events huh?');
+                                        }
+                                    },
+                                    onNavigate: function(direction, itemIndex) {
+                                        if (window.console) {
+                                            return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                                        }
+                                    }
+                                });
+                            });
+                          });
+
+</script>
+
+</body>
+</html>
